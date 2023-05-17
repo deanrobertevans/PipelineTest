@@ -6,7 +6,7 @@ library(magrittr)
 
 # Input parameters
 username <- "kbapipeline"
-password
+password <- Sys.getenv("KBA_PIPELINE_PASS")
 address <- "Restricted/FeatureServer/4"
 spatial <- F
 
