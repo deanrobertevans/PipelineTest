@@ -1,5 +1,3 @@
-system("cd PipelineTest; git pull")
-
 library(httr)
 library(tidyverse)
 library(geojsonsf)
