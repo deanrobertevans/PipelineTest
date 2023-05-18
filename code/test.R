@@ -46,7 +46,7 @@ send.mail(from = "pipeline@deanrobertevans.ca",
           body = paste0("There are ",NSpecies, " species in the KBA-EBAR Database. This message was generated automattically based on the CronR scheduler."),
           smtp = list(host.name = "live.smtp.mailtrap.io", port = 587,
                       user.name = "api",
-                      passwd = "adbea5f8f1158a86d0441fc104f86136", ssl = TRUE),
+                      passwd = , ssl = TRUE),
           authenticate = TRUE,
           send = TRUE)
 
