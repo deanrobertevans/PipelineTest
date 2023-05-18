@@ -1,8 +1,10 @@
+require(gmailr)
 library(httr)
 library(tidyverse)
 library(geojsonsf)
 library(sf)
 library(magrittr)
+library(mailR)
 
 # Input parameters
 username <- "kbapipeline"
@@ -37,3 +39,15 @@ if(!spatial){
 
 # Get number of species
 NSpecies <- nrow(data)
+
+send.mail(from = "pipeline@deanrobertevans.ca",
+          to = "devans@birdscanada.org",
+          subject = "KBA Canada Pipeline",
+          body = paste0("There are ",NSpecies, " species in the KBA-EBAR Database. This message was generated automattically based on the CronR scheduler."),
+          smtp = list(host.name = "live.smtp.mailtrap.io", port = 587,
+                      user.name = "api",
+                      passwd = "adbea5f8f1158a86d0441fc104f86136", ssl = TRUE),
+          authenticate = TRUE,
+          send = TRUE)
+
+
