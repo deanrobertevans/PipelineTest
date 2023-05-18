@@ -1,10 +1,10 @@
-require(gmailr)
+require(mailR)
 library(httr)
 library(tidyverse)
 library(geojsonsf)
 library(sf)
 library(magrittr)
-library(mailR)
+
 
 # Input parameters
 username <- "kbapipeline"
