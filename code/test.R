@@ -43,7 +43,7 @@ NSpecies <- nrow(data)
 send.mail(from = "pipeline@deanrobertevans.ca",
           to = c("devans@birdscanada.org","deanevans1992@gmail.com"),
           subject = "KBA Canada Pipeline",
-          body = paste0("There are ",NSpecies, " species in the KBA-EBAR Database. This message was generated automattically based on the CronR scheduler."),
+          body = paste0("There are ",NSpecies, " species in the KBA-EBAR Database. This message was generated automatically based on the CronR scheduler."),
           smtp = list(host.name = "live.smtp.mailtrap.io", port = 587,
                       user.name = "api",
                       passwd = Sys.getenv("MAILTRAP_PASS"), ssl = TRUE),
