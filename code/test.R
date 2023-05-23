@@ -41,7 +41,7 @@ if(!spatial){
 NSpecies <- nrow(data)
 
 send.mail(from = "pipeline@deanrobertevans.ca",
-          to = c("devans@birdscanada.org","deanevans1992@gmail.com"),
+          to = c("devans@birdscanada.org","cdebyser@wcs.org"),
           subject = "KBA Canada Pipeline",
           body = paste0("There are ",NSpecies, " species in the KBA-EBAR Database. This message was generated automatically based on the CronR scheduler."),
           smtp = list(host.name = "live.smtp.mailtrap.io", port = 587,
