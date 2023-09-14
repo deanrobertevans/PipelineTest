@@ -1,5 +1,5 @@
 require(mailR)
-
+### Test
 
 
 send.mail(from = "pipeline@deanrobertevans.ca",
@@ -11,3 +11,6 @@ send.mail(from = "pipeline@deanrobertevans.ca",
                       passwd = Sys.getenv("MAILTRAP_PASS"), ssl = TRUE),
           authenticate = TRUE,
           send = TRUE)
+
+
+
